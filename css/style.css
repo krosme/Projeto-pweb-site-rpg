@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6; 
+    color: #333; 
+    background: linear-gradient(135deg,#cc2a2a 0%, #800000 100%); 
+    min-height: 100vh;
+}
+header{
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 1rem 5%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header img{
+    height: 60px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+header img:hover{
+    transform: scale(1.05);
+}
+/*===NAVEGAÇÃO nav===*/
+nav{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+nav a{
+    text-decoration: none;
+    color: #764ba2;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 25%;
+    transition: all 0.3s ease;
+    position: relative;
+}
+nav a:hover{
+    background-color: #764ba2;
+    color: white;
+    transform: translate(-2px);
+    box-shadow: 0 5px 15px rgba(118, 75, 162, 0.3);
+}
+nav a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #764ba2;
+    transition: width 0.3s ease;
+}
+nav a:hover::after{
+    width: 80%;
+}
+/*===CONTEÚDO DO BLOG===*/
+main{
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.60);
+    border-radius: 67px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    animation: slideIn 0.5s ease-out;
+}
+/*===DEFINIÇÃO DA ANIMAÇÃO===*/
+@keyframes slideIn {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+img, iframe{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.video-wrapper{
+    position: relative;
+    height: 200px;
+    width: auto;
+}
+iframe{
+    position: absolute;
+    align-items: center; 
+}
+
