@@ -11,7 +11,7 @@ body{
     min-height: 100vh;
 }
 header{
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 1rem 5%; 
     display: flex; 
     align-items: center; 
@@ -24,7 +24,7 @@ header{
     z-index: 1000;
 }
 header img{
-    height: 60px;
+    height: 70px;
     width: auto;
     transition: transform 0.3s ease;
 }
@@ -39,7 +39,7 @@ nav{
 }
 nav a{
     text-decoration: none;
-    color: #764ba2;
+    color: #cc2a2a;
     font-weight: 600;
     padding: 0.5rem 1rem;
     border-radius: 25%;
@@ -47,10 +47,10 @@ nav a{
     position: relative;
 }
 nav a:hover{
-    background-color: #764ba2;
+    background-color: #800000;
     color: white;
     transform: translate(-2px);
-    box-shadow: 0 5px 15px rgba(118, 75, 162, 0.3);
+    box-shadow: 0 5px 15px rgba(128, 0, 0, 1);
 }
 nav a::after{
     content: '';
@@ -60,7 +60,6 @@ nav a::after{
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background-color: #764ba2;
     transition: width 0.3s ease;
 }
 nav a:hover::after{
@@ -76,6 +75,15 @@ main{
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     animation: slideIn 0.5s ease-out;
+}
+main, p{
+    color: white;
+}
+main, a{
+    color: #cc2a2a;
+}
+main, h1{
+    color: white;
 }
 /*===DEFINIÇÃO DA ANIMAÇÃO===*/
 @keyframes slideIn {
