@@ -79,9 +79,13 @@ main{
 main, p{
     color: white;
 }
-main, a{
+
+main a{
     color: #cc2a2a;
+    text-decoration: none;
+
 }
+
 main, h1{
     color: white;
 }
