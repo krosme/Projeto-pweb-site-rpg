@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
+   
     <link rel="icon" href="img/Logo_Ordo_Realitas-removebg-preview.png">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- CSS -->
+     <link rel="stylesheet" href="css/style.css">
   <style>
     body {
     background-image: url("img/Fundo_de_tela.jpg");
@@ -29,37 +31,61 @@
         <a href="elementos.html">Elementos</a>
       </nav>
     </header>
-    <main>
+
+    <main style="display: flex; flex-direction: column; align-items: center;">
       <h1>O que é Ordem Paranormal?</h1>
       <p><a href="https://www.youtube.com/@OrdemParanormal "target="_blank">Ordem Paranormal</a> é um universo de RPG de mesa de terror e investigação, criado por <a href="cellbit.html">Rafael Lange (Cellbit)</a>que teve seu início em 2020 através de campanhas de RPG de mesa em transmissões ao vivo na Twitch.
       Jogadores assumem agentes da <span style="color: #cc2a2a;">"Ordo Realitas"</span>, uma organização secreta que investiga criaturas sobrenaturais e protege a humanidade do "Outro Lado",
       usando um sistema próprio d20 focado em perícias, sanidade e combate.</p>
 
-      <h1>História</h1>
+      <h2>História</h2>
         <p>No início, não havia a intenção de construir um universo fictício com a atual proporção tida por Ordem Paranormal, mas com quatro amigos e uma pequena equipe de produção, a história foi criada por Cellbit em torno da primeira campanha do RPG de mesa.
-          <br>
         A primeira temporada dessa série, A Ordem Paranormal, teve seu primeiro episódio exibido em 29 de fevereiro de 2020 no canal do streamer na Twitch. Assim que a primeira campanha acabou, Cellbit começou a escrever algo maior, com uma equipe maior, e uma nova campanha começou a ser modelada.
-          <br>
         Agora com seis participantes (contando com o mestre), Cellbit apresentou O Segredo na Floresta, a segunda campanha da série. A nova história tinha o objetivo de ser um terror com mistério e suspense - em um universo com várias possibilidades de expansão - e finalizou-se em 16 episódios.
-          <br>
         Para o anúncio da campanha seguinte, foi feito um ARG (jogo de realidade alternativa), o ARG de Desconjuração e Enigma do Medo. Esse jogo durou de 14 a 17 de outubro e, ao final, além do anúncio da terceira campanha, Ordem Paranormal: Desconjuração, foi revelada a produção de um jogo dentro desse mesmo universo: Enigma do Medo.
-          <br>
         Enigma do Medo é um jogo que foi produzido em parceria com a Dumativa, produtora brasileira de videogames, lançado dia 28 de novembro de 2024. O financiamento coletivo para arcar com os custos da produção da obra bateu sua meta inicial de R$ 500 mil em menos de cinco horas após o anúncio e, ao final, foram arrecadados mais de R$ 4 milhões.[4] O jogo esta disponível para PC (Steam).[5][6]
-          <br>
         Para a quarta temporada, mais um jogo de realidade alternativa foi feito, o ARG de Calamidade. Esse jogo durou de 27 a 29 de agosto, e no final, o anúncio de Ordem Paranormal: Calamidade foi feito, tendo a revelação dessa ser a primeira temporada feita presencialmente, em um estúdio em São Paulo.
-          <br>
         Durante o desenrolar da campanha, em meio ao hiato da quarta temporada, Cellbit também anunciou mais três séries spin-offs, sendo a primeira delas chamada de O Segredo na Ilha e a segunda chamada de Sinais do Outro Lado. Logo após, em meio aos dois anos seguintes, Cellbit produziu dois eventos especiais: o primeiro sendo Ordem Paranormal: Quarentena, com criadores de conteúdo internacionais, em 2023, e o segundo sendo Ordem Paranormal: Natal Macabro, para celebrar o Natal em 2024. E em 2025, houve a estreia do terceiro e último spin-off, chamado de Hexatombe, dando uma ligeira sequência ao evento especial anterior.
-          <br>
         No encerramento de Hexatombe, foi confirmada a continuação da temporada quatro que, antes nomeada como Ordem Paranormal: Calamidade Parte II, recebeu um novo subtítulo, passando a se chamar Ordem Paranormal: Apocalipse.</p>
 
+        <!-- CAMPANHAS-->
+        <div class="cs-card">
+            <h2 class="heading">
+              <a href="campanhas.html" style="color: white;">Campanhas</a>
+            </h2>
+            
+          <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column;">
+                <a href="campanhas.html#ordem-paranormal">
+                  <img class="imagem-link" src="img/Campanha_A_Ordem_Paranormal_link.webp" alt="O Segredo na Floresta">
+                </a>
+
+                <a href="campanhas.html#segredo-floresta">
+                  <img class="imagem-link" src="img/O_Segredo_na_Floresta_link.webp" alt="O Segredo na Floresta">
+                </a>
+              </div>
+
+              <div style="display: flex; flex-direction: column;">
+                <a href="campanhas.html#desconjuracao">
+                  <img class="imagem-link" src="img/Campanha_Desconjura_link.webp" alt="O Segredo na Floresta">
+                </a>
+
+                <a href="campanhas.html#calamidade">
+                  <img class="imagem-link" src="img/Campanha_Calamidade_link.webp" alt="O Segredo na Floresta">
+                </a>
+              </div>
+              
+            </div>
+        </div>
     </main>
+
+
     <footer>
       <label for="">Rodovia Raposo Tavares KM 316 a 318</label>
       <label for="">Bairro das Bananeiras</label>
       <p>
         <a href="https://www.instagram.com/etecpirajuoficial/" target="_blank"
-          ><b>@etecpirajuoficial</b></a
-        >
+          ><b>@etecpirajuoficial</b></a>
       </p>
     </footer>
   </body>

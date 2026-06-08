@@ -74,6 +74,8 @@ main{
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     animation: slideIn 0.5s ease-out;
+
+
 }
 main, p{
     color: white;
@@ -114,4 +116,62 @@ iframe{
     position: absolute;
     align-items: center; 
 }
+.cs-card {
+    display: flex; /* Transforma o container em um alinhador flexível */
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center; /* Alinha os itens verticalmente no centro */ 
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+    max-width: fit-content; /* Largura máxima do seu card */
+    border: 2px solid #800000;
+    border-radius: 8px;
+    border-color: #800000;
+    background-color: rgba(0, 0, 0, 0.5);
 
+}
+.cs-card-campanha {
+    display: flex; /* Transforma o container em um alinhador flexível */
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center; /* Alinha os itens verticalmente no centro */ 
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+    max-width: 600px; /* Largura máxima do seu card */
+    border-radius: 15px;
+    border-color: #800000;
+    width: 560px;
+    border: 2px solid #800000;
+    background-color: rgba(0,0,0,.5);
+    margin: 10px;
+}
+.imagem-centralizada{
+    margin 0 auto;
+    object-fit: cover;
+    display: block;
+}
+.imagem-centralizada-campanha {
+    margin: 0 auto;
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.heading {
+background: #800000;
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.imagem-link {
+    border-radius: 10px;
+    box-shadow: 0 0px 5px 0 black;
+    transition: .1s ease-in;
+    margin: 10px;
+}
+.div-campanha {
+    width: 50%;
+    margin-left: 3px;
+    margin-right: 2px;
+}
